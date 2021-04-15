@@ -1,0 +1,69 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background:#FDF0C4;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    margin-top: 40px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+    height: 400px;
+}
+
+article p{
+    line-height: 20pt;
+    column-count: 2;
+    column-gap: 30px;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #F7A992;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #4C364D;   
+    text-align: left;
+}
+h3 {
+    font-size: 1.0em;
+    color: #82A0C2;   
+    text-align: left;
+}
+
+
+li {
+    list-style-type: none;
+    transition: 2s;
+    text-align: center;
+    padding-left: 50px;
+    margin-left: -23%;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a141b;
+}
+footer {
+    padding-top: 80px;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+}
