@@ -24,6 +24,10 @@ article p{
     column-count: 2;
     column-gap: 30px;
 }
+article a{
+    color: rgb(78, 189, 97);
+    font-weight: bold;
+}
 h1 {
     font-size: 2em;
     text-align: center;
