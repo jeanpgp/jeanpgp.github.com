@@ -5,6 +5,19 @@ h1 {
     color: #c912ac;
     margin-top: 20px;
 }
+h2 {
+    font-family: 'Suez One', serif;
+    font-size: 2em;
+    text-align: center;
+    color: #a35797;
+    margin-top: 20px;
+    text-align: center;
+}
+h3 {
+    font-family: 'NTR', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
 #left .guy1{
     position: absolute;
     height: 30%;
