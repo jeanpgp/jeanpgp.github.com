@@ -30,7 +30,7 @@
     function makeMadLib(wordsArray){
         const myText= `"Hi ${wordsArray[0]}. ${wordsArray[1]} told me that they hate you.They are jealous of
                         how your ${wordsArray[2]} looks.`;
-        const myText2= `"I hear ${wordsArray[3]} has a crush on you. 
+        const myText2= `I hear ${wordsArray[3]} has a crush on you. 
                         They think you're really ${wordsArray[4]}"`;
         madlib.innerHTML= myText + myText2 ;
     }
