@@ -27,6 +27,35 @@ article a{
     color: rgb(78, 189, 97);
     font-weight: bold;
 }
+/*image in post*/
+
+.pic {
+    margin-top: 40px;
+    position:relative;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.pic p{
+    display: block;
+    line-height: 20pt;
+    column-count: 2;
+    width: 800px;
+    column-gap: 30px;
+}
+.pic img{
+    display: block; 
+    max-width: 400px; 
+}
+figcaption {
+    color: rgb(95, 160, 106);
+    padding-top: 7.5px;
+    float: right;
+}
+
 h1 {
     font-size: 2em;
     text-align: center;
@@ -68,8 +97,5 @@ a:hover {
 }
 footer {
     padding-top: 80px;
-    grid-row: 4;
-    grid-column-start: 1;
-    grid-column-end: 6;
     text-align: center;
 }
