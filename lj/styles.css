@@ -52,8 +52,9 @@ article a{
 }
 figcaption {
     color: rgb(95, 160, 106);
-    padding-top: 7.5px;
     float: right;
+    padding-top: 0%;
+    padding-bottom: 5%;
 }
 
 h1 {
