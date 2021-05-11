@@ -1,0 +1,104 @@
+body {
+    background-color: #acd0f8;
+}
+#tomb {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 900px;
+
+}
+main {
+    position: relative;
+    max-width: 1450px;
+    padding: 2%;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    color: #3f225a;
+    margin-bottom: 0;
+}
+#art, #bee, #book, #card, #venus {
+    position: absolute;
+    z-index: 2;
+}
+#art:hover, #bee:hover, #book:hover, #card:hover, #venus:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2); 
+}
+#art {
+    left: 70%;
+    top: 44%;
+    width: 180px;
+    height: auto;
+}
+
+#bee {
+    left: 50%;
+    top: 60%;
+    width: 45px;
+    height: auto;
+}
+
+#book {
+    left: 35%;
+    top: 60%;
+    width: 130px;
+    height: auto;
+}
+
+#card {
+    right: 27%;
+    top: 66%;
+    width: 97px;
+    height: auto;
+}
+
+#venus {
+    left: 10%;
+    top: 53%;
+    width: 70px;
+    height: auto;
+}
+
+#artInfo, #beeInfo, #bookInfo, #cardInfo, #venusInfo {
+    background-color: #ffba7a49;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2%;
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 10;
+    overflow: auto;
+    border-radius: 15px;
+    box-shadow: 5px 8px 20px #4d75aa;
+}
+
+#close, #close1, #close2, #close3, #close4, #close5 {
+    position: relative;
+    top: 2%;
+    margin-left: 95%;
+}
+a:hover {
+    color: #0a141b;
+    text-decoration: none;
+}
+footer {
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+}
+footer li {
+    list-style-type: none;
+    text-decoration: none;
+
+}
