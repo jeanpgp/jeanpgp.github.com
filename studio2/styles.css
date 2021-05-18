@@ -1,15 +1,14 @@
 body {
     background-color: #acd0f8;
 }
-#tomb {
-    position: relative;
-    z-index: 1;
-    display: block;
-    margin: auto;
-    height: auto;
-    width: 900px;
-
+#full-width{
+	width: 100%;
+	height: auto;
+	background-image: url("images/tomb.jpg");
+	background-size: cover;
+	background-position: center center;
 }
+
 main {
     position: relative;
     max-width: 1450px;
@@ -22,6 +21,15 @@ h1 {
     text-align: center;
     color: #3f225a;
     margin-bottom: 0;
+}
+#tomb {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 900px;
+
 }
 #art, #bee, #book, #card, #venus {
     position: absolute;
