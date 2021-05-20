@@ -23,6 +23,10 @@ article a{
 }
 /*image in post*/
 
+img{
+    width: 500px;
+    height: auto;
+}
 img:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 8px rgba(225, 160, 255, 0.692);
@@ -31,7 +35,7 @@ img:hover{
 figcaption{
     font-size: smaller;
     color: cadetblue;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 h1 {
