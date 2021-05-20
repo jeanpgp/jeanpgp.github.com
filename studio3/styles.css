@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'Fascinate Inline', cursive;
+    color: #e91313;
+    font-size: 20mm;
+    text-align: center;
+}
+body {
+    background-color: #abd6d6;
+    font-family: Arial;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+    font-family: 'Abhaya Libre', serif;
+    /*
+    font-family: 'Faster One', cursive;
+    */
+}
+
+button { 
+    padding: 10px;
+    font-family: 'Faster One';
+    color: #017c84;
+    border-radius: 12px;
+    font-size: x-large;
+}   
+#quit{
+    font-size: small;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol, #score {
+    background-color: rgb(255, 148, 148);
+}
+
+#game {
+    background-color:#ffffff;
+}
+#actions {
+    background-color: rgb(125, 163, 214);
+}

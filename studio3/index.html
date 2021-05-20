@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Fascinate+Inline&family=Faster+One&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Game of PIG</h1>
+    <p>There are two players. The player whose turn it is orders food. The total pieces of bacon is added to the current player's score. If either plate comes up as one egg, this player's turn is over, and it is the other player’s turn. After each order, the current player can either order again, (assuming one egg was not ordered) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 pieces of bacon or higher wins.</p> 
+    <p>Oh, and if you order one egg on each plate, your current score gets zeroed out. So don’t do that.</p>
+
+    <div id="gamecontrol">
+        <h2>Start a Game</h2>
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+
+ 
+</body>
+</html>
