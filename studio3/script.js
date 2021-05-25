@@ -1,13 +1,16 @@
 'use strict';
+console.log("reading js");
 const startGame = document.getElementById('startgame');
 const gameControl = document.getElementById('gamecontrol');
 const game = document.getElementById('game');
 const score = document.getElementById('score');
 const actionArea = document.getElementById('actions');  
 
+/*audio I made one for every dice roll and pass */
 const diceRoll = new Audio('media/diceroll.mp3');
 const pass = new Audio('media/pass.mp3');
 
+/* game variables and pics used for food plates/dice */
 const gameData = {
     dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
         'images/4die.png', 'images/5die.png', 'images/6die.png'],
@@ -19,6 +22,7 @@ const gameData = {
     index: 0,
     gameEnd: 29
 };
+/*start game */
 startGame.addEventListener("click", function(){
     gameData.index = Math.round(Math.random());
     gameControl.innerHTML = '<h2>The game has started</h2>';
@@ -35,7 +39,7 @@ function setUpTurn(){
     console.log(game);
     actionArea.innerHTML='<button id = "roll"> Order food</button>';
     document.getElementById('roll').addEventListener('click', function(){
-        //console.log("order food!");
+        console.log("order food!");
         throwDice();
     });
 }
@@ -47,13 +51,14 @@ function throwDice(){
     game.innerHTML+= `<img src="${gameData.dice[gameData.roll1-1]}">
                         <img src="${gameData.dice[gameData.roll2-1]}">`;
                         diceRoll.play();
+                        /*first audio */
     gameData.rollSum=gameData.roll1 + gameData.roll2;
     if(gameData.rollSum === 2){
         console.log("2 fried eggs were ordered");
         game.innerHTML+= '<p>Oh no! 2 fried eggs!</p>';
         gameData.score[gameData.index] = 0;
         gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-
+        /*snake eyes */
         setTimeout(setUpTurn, 2000);
         showCurrentScore();
     }
@@ -62,6 +67,7 @@ function throwDice(){
         gameData.index ? (gameData.index = 0) : (gameData.index = 1);
         game.innerHTML += `<p> Sorry, one of your plates was an egg, switching to ${gameData.players[gameData.index]}</p>`;
         setTimeout(setUpTurn,2000);
+        /*skip turn */
     }
     else{
         console.log("the game proceeds");
@@ -73,7 +79,8 @@ function throwDice(){
         document.getElementById('pass').addEventListener('click', function(){
             gameData.index ? (gameData.index = 0) : (gameData.index=1);
             setUpTurn();
-            pass.play();
+            pass.play(); 
+            /*second audio */
         });
         checkWinningCondition();
     }
@@ -86,6 +93,7 @@ function checkWinningCondition(){
         document.getElementById('quit').innerHTML= "Start a new game?";
     }
     else{
+        /*score */
         score.innerHTML=`<p> the score is currently <strong>${gameData.players[0]} :
             ${gameData.score[0]}</strong> and  <strong>${gameData.players[1]} : 
             ${gameData.score[1]}</strong> </p>`;
