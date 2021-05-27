@@ -12,17 +12,36 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: url("images/background.jpg");
+        
+          /* Set a specific height */
+          min-height: 500px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+        
+        <!-- Container element -->
     <header>
         <h1>Every Picture</h1>
     </header>
-    <div id="full-width"></div>
     <main>
+    <div class="parallax">
         <!--clouds-->
         <img src="images/clouds.png" alt="clouds" id="clouds">
+        <!--clouds-->
+        <img src="images/rain.png" alt="rain" id="rain">
         <!--TOMB image-->
         <img src="images/tombstone.png" alt="tomb" id="tomb">
 
-
+    <!--completed above, uncompleted below-->
         <!--ART-->
         <img src="images/artcut.png" alt="art" id="art">
         <aside id="artInfo">
@@ -54,6 +73,7 @@
             <img src="images/venuspola.png" alt="venus">
         </aside>
         <script src="script.js"></script>
+    </div>
         <footer>
             <ul>
                 <li> <a href="mailto:jgpagaduan@ucdavis.edu">email</a></li>

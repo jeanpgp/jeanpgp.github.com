@@ -1,6 +1,20 @@
 body {
-    background-image: url("images/background.jpg");
+    height: 100%;
+
 }
+.parallax {
+    /* The image used */
+    background-image: url("images/background.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 #full-width{
 	width: 100%;
 	height: auto;
@@ -21,6 +35,8 @@ h1 {
     color: #3f225a;
     margin-bottom: 0;
 }
+    /* images */
+
 #tomb {
     position: relative;
     display: block;
@@ -39,8 +55,15 @@ h1 {
     height: auto;
     animation: ani 20s infinite;
 }
-  
-  
+#rain {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: auto;
+    animation: ani 20s infinite;
+}
+      /*animation for clouds/ need to make one for rain*/
+
   @keyframes ani {
     0% {
       left: 0;
@@ -52,6 +75,8 @@ h1 {
       left: 0;
     }
   }
+      /* old studio images */
+
 #art, #bee, #book, #card, #venus {
     position: absolute;
     z-index: 2;
