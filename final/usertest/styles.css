@@ -1,0 +1,201 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  cursor: url("images/buttermouse.png"), auto;
+
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("images/background.jpg");
+  cursor: url("images/mouse.png"), auto;
+  min-height: 100%;
+
+}
+
+#hp{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+
+}
+#oned{
+    position: absolute;
+    left: 65%;
+    top: 40%;
+
+}
+#lm{
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+#tc{
+    position: absolute;
+    left: 80%;
+    top: 15%;
+}
+#yt{
+    position: absolute;
+    left: 10%;
+    top: 70%;
+}
+#moon{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    width: 100px;
+    height: auto;
+
+}
+#hp:hover{
+    background-image: url("images/hphov.png");
+    cursor: url("images/hovermouse.png"), auto;
+}
+#oned:hover{
+    background-image: url("images/1dhov.png");
+    cursor: url("images/hovermouse.png"), auto;
+}
+#lm:hover{
+    background-image: url("images/lmhov.png");
+    cursor: url("images/hovermouse.png"), auto;
+}
+#tc:hover{
+    background-image: url("images/tchov.png");
+    cursor: url("images/hovermouse.png"), auto;
+}
+#yt:hover{
+    background-image: url("images/ythov.png");
+    cursor: url("images/hovermouse.png"), auto; 
+}
+.bgimg-2 {
+  background-image: url("images/background2.jpg");
+  min-height: 40%;
+  cursor: url("images/buttermouse.png"), auto;
+
+
+}
+#flower1, #flower2, #flower3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.bgimg-3 {
+  background-image: url("images/background3.jpg");
+  min-height: 40%;
+  cursor: url("images/buttermouse.png"), auto;
+
+
+}
+
+.bgimg-4 {
+    background-image: url("images/background4.jpg");
+    min-height: 40%;
+    cursor: url("images/buttermouse.png"), auto;
+
+  }
+  .bgimg-5 {
+    background-image: url("images/background5.jpg");
+    min-height: 40%;
+    cursor: url("images/buttermouse.png"), auto;
+
+  
+  }
+  
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.hptext{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    background-image: url("images/divbg.jpg");
+
+    padding:50px 80px;
+    text-align: center;
+}
+
+.yttext{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    background-image: url("images/divbg2.jpg");
+
+    padding:50px 80px;
+    text-align: center;
+}
+.onedtext{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    background-image: url("images/divbg3.jpg");
+
+    padding:50px 80px;
+    text-align: center;
+}
+.tctext{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    background-image: url("images/divbg2.jpg");
+
+    padding:50px 80px;
+    text-align: center;
+}
+.lmtext{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    background-image: url("images/divbg3.jpg");
+
+    padding:50px 80px;
+    text-align: center;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+footer{
+    text-align: center;
+
+    background-color: #165800;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
