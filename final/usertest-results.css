@@ -1,0 +1,99 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background:#FDF0C4;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    margin-top: 40px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+article p{
+    line-height: 20pt;
+    column-count: 2;
+    column-gap: 50px;
+    font-size: large;
+    padding-bottom: 20%;
+}
+article a{
+    color: rgb(78, 189, 97);
+    font-weight: bold;
+}
+/*image in post*/
+
+.pic {
+    margin-top: 40px;
+    position:relative;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.pic p{
+    display: block;
+    line-height: 20pt;
+    column-count: 2;
+    width: 800px;
+    column-gap: 30px;
+}
+.pic img{
+    display: block; 
+    max-width: 400px; 
+}
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #F7A992;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #835fa5;   
+    text-align: left;
+}
+h3 {
+    font-size: 1.0em;
+    color: #82A0C2;   
+    text-align: left;
+}
+
+h1:hover {
+    color: #0a141b;
+}
+
+li {
+    list-style-type: none;
+    transition: 2s;
+    text-align: center;
+    padding-left: 50px;
+    margin-left: -23%;
+}
+
+a {
+    color: rgb(144, 46, 163);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a141b;
+}
+footer {
+    padding-top: 80px;
+    text-align: center;
+}
