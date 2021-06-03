@@ -1,22 +1,21 @@
-(function(){
+(function () {
   "use strict";
   //console window 
   console.log("reading from js");
   //overlays
-  function on() {
+  document.getElementById( "moon" ).onclick = function() {
       document.getElementById("overlay").style.display = "block";
-    }
-    
-    function off() {
-      document.getElementById("overlay").style.display = "none";
-    }
-    function on2() {
+    };
+  document.getElementById( "overlay" ).onclick = function() {
+    document.getElementById("overlay").style.display = "none";
+    };
+
+  document.getElementById( "flower4" ).onclick = function() {
       document.getElementById("overlay2").style.display = "block";
-    }
-    
-    function off2() {
-      document.getElementById("overlay2").style.display = "none";
-    }
+    };
+  document.getElementById( "overlay2" ).onclick = function() {
+    document.getElementById("overlay2").style.display = "none";
+    };
 
   //scoll to where it is on page when constellation clicked
   document.getElementById( "hp" ).onclick = function() {
@@ -44,4 +43,5 @@
       var elmnt = document.getElementById("ytlogo");
       elmnt.scrollIntoView();
   };
+
 })();
