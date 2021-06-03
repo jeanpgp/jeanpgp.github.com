@@ -101,12 +101,13 @@ a:hover {
     text-decoration: none;
 }
 footer {
+    font-size: smaller;
     padding-top: 80px;
     text-align: center;
-    font-family: 'Homemade Apple', cursive;
 }
 footer li {
     list-style-type: none;
     text-decoration: none;
+    font-size: smaller;
 
 }

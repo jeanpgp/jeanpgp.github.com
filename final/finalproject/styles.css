@@ -1,0 +1,267 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #597A4F;
+  cursor: url("images/buttermouse.png"), auto;
+  font-family: 'Sen', sans-serif;
+  font-size: larger;
+}
+/* moon overlay*/
+#overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 25, 68, 0.85);
+  z-index: 2;
+  cursor: url("images/mouse.png"), auto;
+}
+/* bloomed flower overlay*/
+#overlay2 {
+  background-color: rgb(0, 65, 82, 0.85);
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: url("images/butterhovmouse.png"), auto;
+}
+/*overlay text*/
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%,-50%);
+}
+
+/*parallax backgrounds*/
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*sky background*/
+.bgimg-1 {
+  background-image: url("images/background.jpg");
+  cursor: url("images/mouse.png"), auto;
+  min-height: 100%;
+
+}
+
+/*constellations*/
+#hp{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+
+}
+#oned{
+    position: absolute;
+    left: 65%;
+    top: 40%;
+
+}
+#lm{
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+#tc{
+    position: absolute;
+    left: 80%;
+    top: 15%;
+}
+#yt{
+    position: absolute;
+    left: 10%;
+    top: 70%;
+}
+#moon{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    width: 100px;
+    height: auto;
+
+}
+
+/*constellations interactions*/
+#moon:hover{
+  transform: scale(1.6); 
+}
+#hp:hover{
+    background-image: url("images/hphov.png");
+    cursor: url("images/hpmouse.png"), auto;
+}
+#oned:hover{
+    background-image: url("images/1dhov.png");
+    cursor: url("images/onedmouse.png"), auto;
+}
+#lm:hover{
+    background-image: url("images/lmhov.png");
+    cursor: url("images/lmmouse.png"), auto;
+}
+#tc:hover{
+    background-image: url("images/tchov.png");
+    cursor: url("images/tcmouse.png"), auto;
+}
+#yt:hover{
+    background-image: url("images/ythov.png");
+    cursor: url("images/ytmouse.png"), auto; 
+}
+
+/*blooming flowers*/
+#flower1, #flower2, #flower3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-60px 0 0 -60px;
+  
+}
+/*fully bloomed flower*/
+#flower4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:-60px 0 0 -60px;
+  animation: wiggle 1s ease;
+  animation-iteration-count: infinite;
+}
+/*fully bloomed flower animation*/
+#flower4:hover {
+
+  transform: scale(1.2); 
+  cursor: url("images/butterhovmouse.png"), auto;
+
+}
+
+@keyframes wiggle {
+  20%  { transform: translateX(30px);  }
+  40%  { transform: translateX(-30px); }
+  60%  { transform: translateX(10px);  }
+  80%  { transform: translateX(-8px); }
+  100% { transform: translateX(0);    }
+}
+/*hills background*/
+.bgimg-2 {
+  background-image: url("images/background2.jpg");
+  min-height: 40%;
+  cursor: url("images/buttermouse.png"), auto;
+
+
+}
+.bgimg-3 {
+  background-image: url("images/background3.jpg");
+  min-height: 40%;
+  cursor: url("images/buttermouse.png"), auto;
+
+
+}
+.bgimg-4 {
+  background-image: url("images/background4.jpg");
+  min-height: 40%;
+  cursor: url("images/buttermouse.png"), auto;
+
+}
+.bgimg-5 {
+  background-image: url("images/background5.jpg");
+  min-height: 40%;
+  cursor: url("images/buttermouse.png"), auto;
+
+
+}
+
+
+/*scroll through my phases*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+.caption span.border {
+  color: rgb(140, 170, 142);
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/*phases paragraph explanations*/
+.hptext{
+  color: rgb(0, 0, 0);
+  text-align:center;
+  background-image: url("images/divbg.jpg");
+
+  padding:50px 80px;
+  text-align: center;
+}
+
+.yttext{
+  color: rgb(0, 0, 0);
+  text-align:center;
+  background-image: url("images/divbg2.jpg");
+
+  padding:50px 80px;
+  text-align: center;
+}
+.onedtext{
+  color: rgb(0, 0, 0);
+  text-align:center;
+  background-image: url("images/divbg3.jpg");
+
+  padding:50px 80px;
+  text-align: center;
+}
+.tctext{
+  color: rgb(0, 0, 0);
+  text-align:center;
+  background-image: url("images/divbg2.jpg");
+
+  padding:50px 80px;
+  text-align: center;
+}
+.lmtext{
+  color: rgb(0, 0, 0);
+  text-align:center;
+  background-image: url("images/divbg3.jpg");
+
+  padding:50px 80px;
+  text-align: center;
+}
+/*dates and tap anywhere to close*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+}
+/*footer*/
+footer{
+  text-align: center;
+  font-size: small;
+}
+li{
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none; 
+  color: rgb(255, 255, 255); 
+}

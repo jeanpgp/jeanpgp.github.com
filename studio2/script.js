@@ -54,4 +54,6 @@ close3.addEventListener("click", function() {
 close4.addEventListener("click", function() {
     venusInfo.style.display = "none";
 });
-
+function off() {
+    document.getElementById("moonInfo").style.display = "none";
+  }
