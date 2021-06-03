@@ -252,7 +252,7 @@ h3 {
   font: 20px "Lato", sans-serif;
   color: white;
 }
-/*scrollbar*/
+/*scrollbar -- cant find how to customize wiithout webkit*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
