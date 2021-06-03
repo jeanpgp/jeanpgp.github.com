@@ -1,3 +1,4 @@
+(function () {
 'use strict';
 console.log("reading js");
 const startGame = document.getElementById('startgame');
@@ -105,4 +106,4 @@ function showCurrentScore(){
             ${gameData.score[1]}</strong> </p>`;
 
 }
-
+})();
