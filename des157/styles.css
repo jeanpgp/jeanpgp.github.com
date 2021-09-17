@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Crimson Pro', serif;
+    background:#c5d6db;
+    line-height: 1.5em;
+}
+
+
+main {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-rows: auto;
+    max-width: 1200px;
+    min-width: 800px;
+}
+
+header {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-bottom: 5rem;
+    display: block;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#ex2 {
+    display: flex;
+    width: 1100px;
+    height: 150px;
+    margin: auto;
+    background: rgb(197,214,219);
+    background: linear-gradient(0deg, rgba(197,214,219,1) 0%, rgba(255,211,215,1) 52%, rgba(197,214,219,1) 100%);
+    justify-content: space-between;
+    padding: 10px;
+}
+#ex2a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    place-content: center;
+    animation: animation3 8s 2 alternate forwards;
+}
+#ex2b {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    place-content: center;
+    animation: animation3 8s 2 alternate forwards;
+}
+#ex2c {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    place-content: center;
+    animation: animation3 8s 2 alternate forwards;
+}
+@keyframes animation3 {
+    0% { 
+        transform: rotateY(0deg) translateX(0px);
+        animation-timing-function: ease-in;
+    }
+    25% { 
+        transform: rotateY(90deg) translateX(150px) translateZ(150px);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: rotateY(180deg) translateX(0px) translateZ(300px);
+        animation-timing-function: linear;
+        background-color: rgb(238, 211, 135);
+    }
+    75% {
+        transform: rotateY(270deg) translateX(-150px) translateZ(150px);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: rotateY(360deg) translateX(0) translateZ(0px);
+        background-color: rgb(132, 119, 156);
+    }
+}
+
+
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #5a7385;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #5a7385;   
+    text-align: center;
+}
+
+
+li {
+    list-style-type: none;
+    transition: 2s;
+    text-align: center;
+    padding-left: 50px;
+    margin-left: -23%;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a141b;
+}
+
+.col1 {
+    grid-row: 3;
+
+}
+
+.col2 {
+    grid-row: 3;
+
+}
+
+.col3 {
+    grid-row: 3;
+
+}
+
+footer {
+    padding-top: 80px;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+}
